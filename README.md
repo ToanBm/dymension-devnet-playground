@@ -26,11 +26,16 @@ roller version
 roller rollapp init
 ```
 Choose `playground` and enter your `Rollapp ID`
+Save your `hub_sequencer` and `my_celes_key`
+Fund `hub_sequencer`: 20DYM , `my_celes_key`: TIA
+
+
 
 ### Setup RollApp Endpoints
 ```Bash
 curl https://get.telebit.io/ | bash
 ```
+Enter your Email & verify
 ```Bash
 ~/telebit http 1317 rest
 ~/telebit http 8545 evm
@@ -44,6 +49,9 @@ curl https://get.telebit.io/ | bash
 roller rollapp setup
 ```
 Choose `Sequencer` 
+dymint rpc endpoint that you will provide (example: rpc.rollapp.dym.xyz): https://rpc.<your-account>.telebit.io
+rest endpoint that you will provide (example: api.rollapp.dym.xyz): https://rest.<your-account>.telebit.io
+evm rpc endpoint that you will provide (example: json-rpc.rollapp.dym.xyz): https://evm.<your-account>.telebit.io
 
 Start RollApp
 ```Bash
