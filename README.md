@@ -27,6 +27,36 @@ roller rollapp init
 ```
 Choose `playground` and enter your `Rollapp ID`
 
+### Setup RollApp Endpoints
+```Bash
+curl https://get.telebit.io/ | bash
+```
+```Bash
+~/telebit http 1317 rest
+~/telebit http 8545 evm
+~/telebit http 26657 rpc
+```
+```Bash
+~/telebit save
+```
+### Setup RollApp Sequencer
+```Bash
+roller rollapp setup
+```
+Choose `Sequencer` 
+
+Start RollApp
+```Bash
+roller rollapp services load
+```
+```Bash
+roller rollapp services start
+```
+```Bash
+roller rollapp status
+```
+
+
 
 
 
