@@ -34,6 +34,22 @@ go version
 ```Bash
 curl https://raw.githubusercontent.com/dymensionxyz/roller/main/install.sh | bash
 ```
+### - If error run cmd below
+```Bash
+mkdir /tmp/roller_tmp/roller
+```
+```Bash
+sudo curl -L "https://github.com/dymensionxyz/roller/releases/download/v1.6.4-alpha-rc08/roller_Linux_amd64.tar.gz" --progress-bar | sudo tar -xz -C "/tmp/roller_tmp"
+```
+```Bash
+sudo mv "/tmp/roller_tmp/roller" "/usr/local/bin/roller"
+```
+```Bash
+sudo chmod +x "/usr/local/bin/roller"
+```
+```Bash
+sudo rm -rf "/tmp/roller_tmp"
+```
 ```Bash
 roller version
 ```
